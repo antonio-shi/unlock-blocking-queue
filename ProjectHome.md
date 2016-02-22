@@ -1,0 +1,3 @@
+该组件内部是一个环形数组，受Disruptor启发而创建！
+Disruptor是一个优秀的无锁队列，内部使用环形数组避免java对象的频繁受垃圾回收器回收。Disruptor本身在使用时会过于复杂而且是基于回调的编程方式，不如jdk自带的BlockingQueue使用方便。
+jdk自带的BlockingQueue的缺点就是锁带来的性能损耗！
